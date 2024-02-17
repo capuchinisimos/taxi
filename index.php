@@ -75,9 +75,51 @@ as $error): ?>
 </head>
 <body>
     <h1>Réservez votre Taxi</h1>
-    <form action="index.php" method="post">
-        <!-- Les champs du formulaire ici -->
-        <!-- ... -->
+    <form action="reservation.php" method="post">
+       <div>
+      <label for="name"> Nom complet :</label>
+      <input type="text" id="name" name="name" required>
+       </div>
+       <div>
+        <label for="phone">Numéro de téléphone :</label>
+        <input type="tel" id="phone" name="phone" required>
+       </div>
+       <div>
+        <label for="pickup_location">Adresse de prise en charge :</label>
+        <input type="text" id="pickup_location" name="pickup_location" required>
+       </div>
+       <div>
+        <label for="dropoff_location">Adresse de destination :</label>
+        <input type="text" id="dropoff_location" name="dropoff_location"required>
+       </div>
+<div>
+    <label for="pickup_date"> Date de prise en charge :</label>
+    <input type="date" id="pickup_date" name="pickup_date" required>
+</div>
+<div>
+<label for="pickup_time"> Heure de prise en charge</label>
+<input type="time" id="pickup_time" name="pickup_time" required>
+</div>
+<div>
+    <label for="comments"> Commentaires additionnels :</label>
+    <textarea name="comments" id="comments"></textarea>
+</div>
+<div>
+<input type="submit" value="Reserver un taxi"></div>
     </form>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").onsubmit = function() {
+        var name = document.querySelector("#name").value;
+        if (name.trim() === "") {
+            alert("Le nom est requis.");
+            return false; // Empêche la soumission du formulaire
+        }
+        // Ajoutez ici d'autres validations si nécessaire
+        return true; // Permet la soumission du formulaire
+    };
+});
+</script>
+
 </body>
 </html>
