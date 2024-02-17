@@ -3,17 +3,17 @@
 session_start();
 
 // Vérifier si les données de réservation existent dans la session
-if (!isset($_SESSION['reservation_data'])) {
+if (!isset($_SESSION['reservation'])) {
     // Si aucune donnée de réservation n'est disponible, rediriger vers la page de réservation
     header('Location: index.php');
     exit;
 }
 
 // Récupérer les données de réservation de la session
-$reservationData = $_SESSION['reservation_data'];
+$reservationData = $_SESSION['reservation'];
 
 // Effacer les données de réservation de la session après leur récupération
-unset($_SESSION['reservation_data']);
+unset($_SESSION['reservation']);
 ?>
 
 <!DOCTYPE html>

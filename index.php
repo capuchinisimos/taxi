@@ -70,11 +70,17 @@ as $error): ?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Réservation de Taxi</title>
+    <title>BTS ALLIANCE TAXIS</title>
     <!-- Insérez ici les styles CSS ou les liens externes si nécessaire -->
 </head>
 <body>
-    <h1>Réservez votre Taxi</h1>
+
+<header>
+    <img src="bts.jpg" alt="logo">
+<h1>BTS ALLIANCE TAXIS</h1>
+</header>
+<main>
+    <h2>FORMULAIRE DE RESERVATION DE TAXI EN LIGNE</h2>
     <form action="reservation.php" method="post">
        <div>
       <label for="name"> Nom complet :</label>
