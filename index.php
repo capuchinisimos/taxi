@@ -76,8 +76,19 @@ as $error): ?>
 <body>
 
 <header>
-    <img src="bts.jpg" alt="logo">
+    
 <h1>BTS ALLIANCE TAXIS</h1>
+<div class="navbar">
+    <ul>
+        <li>
+            <a href="index.html" target="_blank" rel="noopener noreferrer">Accueil</a>
+        </li>
+        <li>
+            <a href="index.php" target="_blank" rel="noopener noreferrer">Reservation</a>
+        </li>
+    </ul>
+</div>
+<img src="bts.jpg" alt="logo">
 </header>
 <main>
     <h2>FORMULAIRE DE RESERVATION DE TAXI EN LIGNE</h2>
