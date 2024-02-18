@@ -70,27 +70,33 @@ as $error): ?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>BTS ALLIANCE TAXIS</title>
+    <title>YOUBER TAXIS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+      rel="stylesheet" />
+<script src="index.js"></script>
     <!-- Insérez ici les styles CSS ou les liens externes si nécessaire -->
 </head>
 <body>
-
+<div class="bg">
 <header>
     
-<h1>BTS ALLIANCE TAXIS</h1>
-<div class="navbar">
-    <ul>
-        <li>
-            <a href="index.html" target="_blank" rel="noopener noreferrer">Accueil</a>
-        </li>
-        <li>
-            <a href="index.php" target="_blank" rel="noopener noreferrer">Reservation</a>
-        </li>
-    </ul>
-</div>
-<img src="bts.jpg" alt="logo">
+<h1>YOUBER TAXIS</h1>
+<div class="main-navbar">
+
+        
+        <a href="index.html"><span>Accueil</span></a>
+        <a href="index.php" class="active"><span>Réservation</span></a>
+        
+      </div>
+<img src="car.webp" alt="logo">
 </header>
 <main>
+ 
     <h2>FORMULAIRE DE RESERVATION DE TAXI EN LIGNE</h2>
     <form action="reservation.php" method="post">
        <div>
@@ -123,20 +129,8 @@ as $error): ?>
 </div>
 <div>
 <input type="submit" value="Reserver un taxi"></div>
-    </form>
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("form").onsubmit = function() {
-        var name = document.querySelector("#name").value;
-        if (name.trim() === "") {
-            alert("Le nom est requis.");
-            return false; // Empêche la soumission du formulaire
-        }
-        // Ajoutez ici d'autres validations si nécessaire
-        return true; // Permet la soumission du formulaire
-    };
-});
-</script>
+    </form> </main></div>
+    
 
 </body>
 </html>
